@@ -133,9 +133,9 @@ custom_packages() {
     nikki="https://raw.githubusercontent.com/lhbox1/ipkg/refs/heads/main/luci-app-nikki.ipk"
     nikki2="https://raw.githubusercontent.com/lhbox1/ipkg/refs/heads/main/nikki.ipk"
     nikki3="https://raw.githubusercontent.com/lhbox1/ipkg/refs/heads/main/luci-i18n-nikki-zh-cn.ipk"
-    curl -sfL -o ./luci-app-nikki ${nikki}
-    curl -sfL -o ./nikki ${nikki2}
-    curl -sfL -o ./luci-i18n-nikki-zh-cn ${nikki3}
+    curl -sfL -o ./luci-app-nikki.ipk ${nikki}
+    curl -sfL -o ./nikki.ipk ${nikki2}
+    curl -sfL -o ./luci-i18n-nikki-zh-cn.ipk ${nikki3}
     
     
     
