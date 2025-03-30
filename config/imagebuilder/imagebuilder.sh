@@ -129,12 +129,13 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
+    
     nikki="https://raw.githubusercontent.com/lhbox1/ipkg/refs/heads/main/luci-app-nikki.ipk"
     nikki2="https://raw.githubusercontent.com/lhbox1/ipkg/refs/heads/main/nikki.ipk"
     nikki3="https://raw.githubusercontent.com/lhbox1/ipkg/refs/heads/main/luci-i18n-nikki-zh-cn.ipk"
-    curl -fsSOJL ${nikki}
-    curl -fsSOJL ${nikki2}
-    curl -fsSOJL ${nikki3}
+    curl -sfL -o ./luci-app-nikki ${nikki}
+    curl -sfL -o ./nikki ${nikki2}
+    curl -sfL -o ./luci-i18n-nikki-zh-cn ${nikki3}
     
     
     
@@ -202,7 +203,7 @@ rebuild_firmware() {
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
         firewall4 ca-bundle ip-full yq kmod-inet-diag kmod-nft-socket kmod-nft-tproxy kmod-tun \
-        # nikki luci-app-nikki luci-i18n-nikki-zh-cn \
+        nikki luci-app-nikki luci-i18n-nikki-zh-cn \
         \
         ${config_list} \
         "
