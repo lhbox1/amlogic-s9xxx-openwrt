@@ -129,13 +129,18 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
-    
+    nikki=＂nikki＂
+    luci-app-nikki=＂luci-app-nikki＂
+    luci-i18n-nikki=＂luci-i18n-nikki＂
     nikki="https://raw.githubusercontent.com/lhbox1/ipkg/refs/heads/main/luci-app-nikki.ipk"
     nikki2="https://raw.githubusercontent.com/lhbox1/ipkg/refs/heads/main/nikki.ipk"
     nikki3="https://raw.githubusercontent.com/lhbox1/ipkg/refs/heads/main/luci-i18n-nikki-zh-cn.ipk"
     curl -sfL -o ./luci-app-nikki.ipk ${nikki}
     curl -sfL -o ./nikki.ipk ${nikki2}
     curl -sfL -o ./luci-i18n-nikki-zh-cn.ipk ${nikki3}
+    echo -e "${INFO} The [ ${nikki} ] is downloaded successfully."
+    echo -e "${INFO} The [ ${luci-i18n-nikki} ] is downloaded successfully."
+    echo -e "${INFO} The [ ${luci-app-nikki} ] is downloaded successfully."
     
     
     
