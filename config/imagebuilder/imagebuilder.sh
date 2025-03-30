@@ -108,6 +108,9 @@ custom_packages() {
     cd ${imagebuilder_path}
     echo -e "${STEPS} Start adding custom packages..."
 
+    echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
+    
+
     # Create a [ packages ] directory
     [[ -d "packages" ]] || mkdir packages
     cd packages
@@ -129,7 +132,6 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
-    # echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
     
     
     
@@ -197,8 +199,8 @@ rebuild_firmware() {
         \
         firewall4 ca-bundle ip-full yq kmod-inet-diag kmod-nft-socket kmod-nft-tproxy kmod-tun \
         \
-        # nikki luci-app-nikki luci-i18n-nikki-zh-cn \
-        # \
+        nikki luci-app-nikki luci-i18n-nikki-zh-cn \
+        \
         ${config_list} \
         "
 
