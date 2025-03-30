@@ -3,6 +3,19 @@
 # https://github.com/ophub/amlogic-s9xxx-openwrt
 # 1. Applications
 #
+CONFIG_PACKAGE_luci-app-samba4=y
+
+
+CONFIG_PACKAGE_luci-app-openclash=y
+CONFIG_PACKAGE_luci-app-ssr-plus=y
+CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_sing-box=y
+CONFIG_PACKAGE_hysteria=y
+CONFIG_PACKAGE_xray-core=y
+CONFIG_PACKAGE_trojan-plus=y
+
+
+
 
 CONFIG_PACKAGE_luci-app-ddns=n
 CONFIG_PACKAGE_luci-app-dockerman=n
