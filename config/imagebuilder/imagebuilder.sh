@@ -129,7 +129,12 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
-
+    nikki="https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.21.2/nikki_aarch64_cortex-a53-openwrt-24.10.tar.gz"
+    curl -sfL -o ./nikki.tar.gz $nikki
+    tar -zxf ./nikki.tar.gz
+    
+    
+    
     sync && sleep 3
     echo -e "${INFO} [ packages ] directory status: $(ls -al 2>/dev/null)"
 }
@@ -191,6 +196,9 @@ rebuild_firmware() {
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
+        \
+        firewall4 ca-bundle ip-full yq kmod-inet-diag kmod-nft-socket kmod-nft-tproxy kmod-tun \
+        nikki luci-app-nikki luci-i18n-nikki-zh-cn \
         \
         ${config_list} \
         "
