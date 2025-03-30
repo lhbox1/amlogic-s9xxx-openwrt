@@ -129,7 +129,7 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
-    echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
+    # echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
     
     
     
@@ -196,8 +196,9 @@ rebuild_firmware() {
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
         firewall4 ca-bundle ip-full yq kmod-inet-diag kmod-nft-socket kmod-nft-tproxy kmod-tun \
-        nikki luci-app-nikki luci-i18n-nikki-zh-cn \
         \
+        # nikki luci-app-nikki luci-i18n-nikki-zh-cn \
+        # \
         ${config_list} \
         "
 
