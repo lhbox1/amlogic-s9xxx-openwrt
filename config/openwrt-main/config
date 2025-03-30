@@ -1,6 +1,10 @@
 #
 # Automatically generated file; DO NOT EDIT.
 # OpenWrt Configuration
+
+
+CONFIG_PACKAGE_luci-app-nikki=y
+
 #
 CONFIG_MODULES=y
 CONFIG_HAVE_DOT_CONFIG=y
