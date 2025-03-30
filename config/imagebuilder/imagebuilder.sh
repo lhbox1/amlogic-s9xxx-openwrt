@@ -129,9 +129,7 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
-    nikki="https://github.com/nikkinikki-org/OpenWrt-nikki/releases/download/v1.21.2/nikki_aarch64_cortex-a53-openwrt-24.10.tar.gz"
-    curl -sfL -o ./nikki.tar.gz $nikki
-    tar -zxf ./nikki.tar.gz
+    echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
     
     
     
