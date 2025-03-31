@@ -3,8 +3,8 @@
 # https://github.com/ophub/amlogic-s9xxx-openwrt
 # 1. Applications
 #
-#CONFIG_PACKAGE_luci-app-samba4=y
-#CONFIG_PACKAGE_luci-app-zerotier=y
+CONFIG_PACKAGE_luci-app-samba4=y
+CONFIG_PACKAGE_luci-app-zerotier=y
 
 
 CONFIG_PACKAGE_luci-app-ddns=n
