@@ -129,7 +129,6 @@ custom_packages() {
 
     # Download other luci-app-xxx
     # ......
-    curl -fsSOJL https://github.com/vernesong/OpenClash/releases/download/v0.46.079/luci-app-openclash_0.46.079_all.ipk
     
     
     
@@ -196,7 +195,8 @@ rebuild_firmware() {
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
-        firewall4 ca-bundle ip-full yq kmod-inet-diag kmod-nft-socket kmod-nft-tproxy kmod-tun \
+        ruby ruby-yaml firewall4 ca-bundle ip-full yq kmod-inet-diag kmod-nft-socket kmod-nft-tproxy kmod-tun \
+        sing-box \
         \
         ${config_list} \
         "
