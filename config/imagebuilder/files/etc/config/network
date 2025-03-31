@@ -24,3 +24,12 @@ config interface 'lan'
 	list dns '192.168.15.1'
 	list dns '223.5.5.5'
 
+config interface 'docker'
+	option device 'docker0'
+	option proto 'none'
+	option auto '0'
+
+config device
+	option type 'bridge'
+	option name 'docker0'
+
