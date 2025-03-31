@@ -195,6 +195,7 @@ rebuild_firmware() {
         \
         luci-app-samba4 luci-i18n-samba4-zh-cn luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
+        docker dor-ckecompose dockerd containerd \
         openssh-sftp-server ruby ruby-yaml firewall4 ca-bundle ip-full yq kmod-inet-diag kmod-nft-socket kmod-nft-tproxy kmod-tun \
         sing-box kmod-usb2 kmod-fuse \
         \
