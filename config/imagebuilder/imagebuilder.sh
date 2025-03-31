@@ -193,7 +193,7 @@ rebuild_firmware() {
         luci-mod-status luci-mod-system luci-proto-3g luci-proto-ipip luci-proto-ipv6 \
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         \
-        luci-app-samba4 luci-app-amlogic luci-i18n-amlogic-zh-cn \
+        luci-app-samba4 luci-i18n-samba4-zh-cn luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
         openssh-server ruby ruby-yaml firewall4 ca-bundle ip-full yq kmod-inet-diag kmod-nft-socket kmod-nft-tproxy kmod-tun \
         sing-box \
