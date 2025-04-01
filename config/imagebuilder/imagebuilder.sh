@@ -197,7 +197,7 @@ rebuild_firmware() {
         \
         docker docker-compose dockerd containerd \
         openssh-sftp-server ruby ruby-yaml firewall4 ca-bundle ip-full yq kmod-inet-diag kmod-nft-socket kmod-nft-tproxy kmod-tun \
-        sing-box kmod-usb2 kmod-fuse \
+        kmod-usb2 kmod-fuse \
         \
         ${config_list} \
         "
