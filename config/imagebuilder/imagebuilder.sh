@@ -195,13 +195,14 @@ rebuild_firmware() {
         \
         luci-app-homeproxy luci-i18n-homeproxy-zh-cn luci-app-samba4 luci-i18n-samba4-zh-cn luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
-        docker docker-compose dockerd containerd \
         openssh-sftp-server ruby ruby-yaml firewall4 ca-bundle ip-full yq kmod-inet-diag kmod-nft-socket kmod-nft-tproxy kmod-tun \
         kmod-usb2 kmod-fuse \
         \
         ${config_list} \
         "
 
+    ## docker docker-compose dockerd containerd \
+    
     # Rebuild firmware
     make image PROFILE="" PACKAGES="${my_packages}" FILES="files"
 
