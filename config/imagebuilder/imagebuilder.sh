@@ -128,7 +128,7 @@ custom_packages() {
     echo -e "${INFO} The [ ${amlogic_i18n} ] is downloaded successfully."
 
     # Download other luci-app-xxx
-   curl -fsSOJL https://github.com/vernesong/OpenClash/releases/download/v0.47.001/luci-app-openclash_0.47.001_all.ipk
+    curl -fsSOJL https://github.com/vernesong/OpenClash/releases/download/v0.47.001/luci-app-openclash_0.47.001_all.ipk
     # ......
 
     sync && sleep 3
