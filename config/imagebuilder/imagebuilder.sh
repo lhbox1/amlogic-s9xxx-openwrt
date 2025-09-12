@@ -128,7 +128,7 @@ custom_packages() {
     echo -e "${INFO} The [ ${amlogic_i18n} ] is downloaded successfully."
 
     # Download other luci-app-xxx
-    curl -fsSOJL https://github.com/vernesong/OpenClash/releases/download/v0.47.001/luci-app-openclash_0.47.001_all.ipk
+    curl -fsSoJL luci-app-openclash.ipk https://github.com/vernesong/OpenClash/releases/download/v0.47.001/luci-app-openclash_0.47.001_all.ipk
     # ......
 
     sync && sleep 3
@@ -191,7 +191,7 @@ rebuild_firmware() {
         luci-mod-status luci-mod-system luci-proto-3g luci-proto-ipip luci-proto-ipv6 \
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         \
-        luci-app-amlogic luci-i18n-amlogic-zh-cn \
+        luci-app-openclash luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
         ${config_list} \
         "
