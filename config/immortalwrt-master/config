@@ -2,7 +2,7 @@
 # Automatically generated file; DO NOT EDIT.
 # ImmortalWrt Configuration
 
-
+CONFIG_PACKAGE_luci-app-aria2=y
 #魔法
 CONFIG_PACKAGE_luci-app-openclash=y
 CONFIG_PACKAGE_luci-app-passwall=y
