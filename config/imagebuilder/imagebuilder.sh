@@ -177,7 +177,7 @@ rebuild_firmware() {
     my_packages="\
         acpid attr base-files bash bc blkid block-mount blockd bsdtar btrfs-progs busybox bzip2 \
         cgi-io chattr comgt comgt-ncm containerd coreutils coreutils-base64 coreutils-nohup \
-        coreutils-truncate curl docker docker-compose dockerd dosfstools dumpe2fs e2freefrag e2fsprogs \
+        coreutils-truncate curl docker docker-compose coremark dockerd dosfstools dumpe2fs e2freefrag e2fsprogs \
         exfat-mkfs f2fs-tools f2fsck fdisk sgdisk gawk getopt git gzip hostapd-common iconv iw iwinfo jq \
         jshn kmod-brcmfmac kmod-brcmutil kmod-cfg80211 kmod-mac80211 libjson-script liblucihttp \
         liblucihttp-lua losetup lsattr lsblk lscpu mkf2fs mount-utils openssl-util parted \
@@ -191,7 +191,7 @@ rebuild_firmware() {
         luci-mod-status luci-mod-system luci-proto-3g luci-proto-ipip luci-proto-ipv6 \
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         kmod-fuse kmod-tls kmod-fs-vfat kmod-fs-ntfs kmod-fs-exfat kmod-fs-cifs kmod-usb2 kmod-usb-storage kmod-usb-storage-uas kmod-usb-storage-extras kmod-usb-net-rndis \
-        openssh-sftp-server adguardhome luci-app-aria2 luci-app-samba4 luci-proto-wireguard \
+        openssh-sftp-server adguardhome luci-app-aria2 luci-i18n-aria2-zh-cn luci-app-samba4 luci-i18n-samba4-zh-cn luci-proto-wireguard \
         \
         luci-app-openclash luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
