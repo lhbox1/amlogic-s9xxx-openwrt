@@ -191,7 +191,7 @@ rebuild_firmware() {
         luci-mod-status luci-mod-system luci-proto-3g luci-proto-ipip luci-proto-ipv6 \
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         kmod-fuse kmod-tls kmod-fs-vfat kmod-fs-ntfs kmod-fs-exfat kmod-fs-cifs kmod-usb2 kmod-usb-storage kmod-usb-storage-uas kmod-usb-storage-extras kmod-usb-net-rndis \
-        openssh-sftp-server adguardhome luci-app-aria2 luci-i18n-aria2-zh-cn luci-app-samba4 luci-i18n-samba4-zh-cn luci-proto-wireguard \
+        coremark openssh-sftp-server adguardhome luci-app-aria2 luci-i18n-aria2-zh-cn luci-app-samba4 luci-i18n-samba4-zh-cn luci-proto-wireguard \
         \
         luci-app-openclash luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
